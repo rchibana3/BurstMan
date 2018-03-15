@@ -8,20 +8,29 @@ key_jump = keyboard_check_pressed(vk_space);
 
 key_shoot = keyboard_check(ord("H")) || keyboard_check_pressed(vk_enter);
 
+on_ground = place_meeting(x, y+1, oWall);
 
 ////Calculate movement
 var move = key_right - key_left;
+
+if (key_shoot) shooting_anim = 20;
+else shooting_anim = max(0, shooting_anim - 1);
+
 hsp = move * walksp;
-if (place_meeting(x, y+1, oWall)) && (key_jump)
+
+if (abs(sign(hsp)) > 0) is_running = true;
+else is_running = false;
+
+if (on_ground && key_jump)
 {
 	vsp = -4.5;	
 }
 vsp = vsp + grv;
 
 //////Horizontal collision
-if (place_meeting(x+hsp, y, oWall))
+if (place_meeting(x + hsp, y, oWall))
 {
-	while (!place_meeting(x+sign(hsp), y, oWall))
+	while (!place_meeting(x + sign(hsp), y, oWall))
 	{
 		x = x + sign(hsp);
 	}
@@ -29,24 +38,22 @@ if (place_meeting(x+hsp, y, oWall))
 }
 x = x + hsp;
 
-if (key_shoot) {
-	
-}
-
 ////Vertical collision
-if (place_meeting(x, y+vsp, oWall))
+if (place_meeting(x, y + vsp, oWall))
 {
 	while (!place_meeting(x, y + sign(vsp), oWall))
 	{
 		y = y + sign(vsp);
 	}
 	vsp = 0;
+	on_ground = true;
 }
 y = y + vsp;
 
+
 //Shooting bullet creation
-firingdelay = firingdelay - 1;
-if (key_shoot && firingdelay < 0)
+firingdelay = max(0, firingdelay - 1);
+if (key_shoot and firingdelay == 0)
 {
 	firingdelay = 4;
 	if image_xscale > 0 offset = 10;
@@ -61,25 +68,28 @@ if (key_shoot && firingdelay < 0)
 
 
 //Animation
-if (key_shoot) shooting_anim = 20;
-else shooting_anim = max(0, shooting_anim - 1);
 
+
+if (shooting_anim > 0) is_shooting = true;
+else is_shooting = false;
+
+on_ground = place_meeting(x, y+1, oWall);
 
 // Player in air
-if (!place_meeting (x, y+1, oWall))
+if (!on_ground)
 {
 	// Is shooting
-	if (shooting_anim > 0) {
-		image_speed = 0;
+	if (is_shooting) {
 		sprite_index = sPlayerJSh;
 	} else {
 		sprite_index = sPlayerJ;
 	}
 } else {
-	if (shooting_anim > 0) {
+	if (is_running and is_shooting) {
+		sprite_index = sPlayerRSh;
+	} else if (!is_running and is_shooting) {
 		sprite_index = sPlayerSh;
-	} else if (abs(sign(hsp)) > 0) {
-		image_speed = 1;
+	} else if (is_running) {
 		sprite_index = sPlayerR;
 	} else {
 		sprite_index = sPlayerSt;
