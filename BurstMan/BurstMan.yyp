@@ -77,6 +77,25 @@
             }
         },
         {
+            "Key": "19e3bf08-8fa6-4423-ad8b-970d11f0d91e",
+            "Value": {
+                "id": "8e1a6678-53c6-4953-899a-9ac12006108f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/oWall\/oWall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "20700729-eb53-48d8-b158-1e277e344fa8",
             "Value": {
                 "id": "97123329-727a-46cc-95d2-f1814463831a",
@@ -186,7 +205,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/sprite0\/sprite0.yy",
+                "resourcePath": "sprites\/sPlayer\/sPlayer.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -286,6 +305,25 @@
             }
         },
         {
+            "Key": "7d6a54fc-c091-4078-9387-b391a664ef38",
+            "Value": {
+                "id": "4b35227f-d1b4-4817-8f5b-8ea20509a75a",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sWall\/sWall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "854f298e-2bd9-4e54-b615-8a5d70fa2268",
             "Value": {
                 "id": "16329574-cf58-482b-9021-6bebd2e94ab5",
@@ -359,6 +397,25 @@
                 ],
                 "resourcePath": "views\/b72b7d41-eaf0-4617-89a3-d6d8aa283897.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ddd52940-6e54-420b-8c28-953bbf7b5ff3",
+            "Value": {
+                "id": "202a850e-1120-4e88-868c-100b49a7a78d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/oPlayer\/oPlayer.yy",
+                "resourceType": "GMObject"
             }
         },
         {
