@@ -65,5 +65,5 @@ if (!place_meeting (x, y+1, oWall))
 		sprite_index = sPlayerR;
 	} else {
 		sprite_index = sPlayerSt;
-	}
+	} 
 }
