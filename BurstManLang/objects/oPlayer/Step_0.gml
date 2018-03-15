@@ -29,6 +29,10 @@ if (place_meeting(x+hsp, y, oWall))
 }
 x = x + hsp;
 
+if (key_shoot) {
+	
+}
+
 ////Vertical collision
 if (place_meeting(x, y+vsp, oWall))
 {
@@ -39,6 +43,20 @@ if (place_meeting(x, y+vsp, oWall))
 	vsp = 0;
 }
 y = y + vsp;
+
+//Shooting bullet creation
+firingdelay = firingdelay - 1;
+if (key_shoot && firingdelay < 0)
+{
+	firingdelay = 4;
+	if image_xscale > 0 offset = 10;
+	else offset = -10;
+	with (instance_create_layer(x+offset,y,"shootLayer", oStar)) {
+		speed = 15;
+		if (other.image_xscale > 0) direction = 0;
+		else direction = 180;
+	}
+}
 
 
 
@@ -67,3 +85,6 @@ if (!place_meeting (x, y+1, oWall))
 		sprite_index = sPlayerSt;
 	} 
 }
+
+if (sign(hsp) > 0) image_xscale = 1;
+if (sign(hsp) < 0) image_xscale = -1;

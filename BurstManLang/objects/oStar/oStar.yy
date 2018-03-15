@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oStar",
     "eventList": [
-        
+        {
+            "id": "cae79b1e-b8e0-450d-a737-15c34d618192",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 77,
+            "eventtype": 8,
+            "m_owner": "945b4672-c7ff-4562-b512-ed2994071bb7"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

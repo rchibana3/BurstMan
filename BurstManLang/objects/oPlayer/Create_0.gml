@@ -7,3 +7,4 @@ grv = 0.35;
 walksp = 4;
 image_index = 0;
 shooting_anim = 0;
+firingdelay = 0;
