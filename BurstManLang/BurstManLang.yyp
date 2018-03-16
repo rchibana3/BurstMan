@@ -153,6 +153,25 @@
             }
         },
         {
+            "Key": "209d31ab-5948-4888-b86a-b73b0039e686",
+            "Value": {
+                "id": "557a1642-1ab3-4f4d-820a-ce2f9cd43086",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sWalker\/sWalker.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3006c9ae-48aa-4f50-8fa2-892acb63fb24",
             "Value": {
                 "id": "fceb333b-d006-4edd-8c7b-4c161046f9d2",
@@ -890,6 +909,25 @@
                     "default"
                 ],
                 "resourcePath": "objects\/oMeter\/oMeter.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f1fe540a-9d9e-4197-9463-cadf22209ea6",
+            "Value": {
+                "id": "bc267d94-9033-4300-b13b-3922253d55d5",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/oWalker\/oWalker.yy",
                 "resourceType": "GMObject"
             }
         },

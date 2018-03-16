@@ -6,3 +6,6 @@ if (place_meeting(x, y, oMet)) {
 if (place_meeting(x, y, oMetStatic)) {
 	instance_destroy()
 }
+if (place_meeting(x, y, oWalker)) {
+	instance_destroy()
+}
