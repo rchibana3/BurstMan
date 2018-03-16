@@ -8,15 +8,14 @@ walksp = 5;
 sprite_index = sMet;
 image_index = 0;
 image_speed = 0;
-image_xscale = -1;
-
+image_xscale = -image_xscale;
 hp = 5;
 
 
 
 SITTING_TICK_MAX = 50;
-EMERGING_TICK_MAX = 30;
-SHOOTING_TICK_MAX = 10;
+EMERGING_TICK_MAX = 60;
+SHOOTING_TICK_MAX = 30;
 MOVING_TICK_MAX = 8;
 MOVING_ITERATIONS = 3;
 

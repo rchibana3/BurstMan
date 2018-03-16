@@ -36,7 +36,7 @@ else is_running = false;
 
 if (on_ground && key_jump)
 {
-	vsp = -4.5;	
+	vsp = -7;	
 }
 vsp = vsp + grv;
 
@@ -62,12 +62,16 @@ x = x + hsp;
 //////Vertical collision
 if (place_meeting(x, y + vsp, oWall))
 {
-	while (!place_meeting(x, y + sign(vsp), oWall))
+	while (!place_meeting(x, y + (0.01 * sign(vsp)), oWall))
 	{
-		y = y + sign(vsp);
+		y = y + (0.01 * sign(vsp));
 	}
+	//while (!place_meeting(x, y + (0.1 * sign(vsp)), oWall))
+	//{
+	//	y = y + sign(vsp);
+	//}
 	vsp = 0;
-	on_ground = true;
+	on_ground =  true;
 }
 y = y + vsp;
 

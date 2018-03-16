@@ -248,6 +248,25 @@
             }
         },
         {
+            "Key": "399c05e3-a083-405f-a76e-ed199c5dcd3d",
+            "Value": {
+                "id": "ac9a14e2-5dfe-4d95-89b4-e91750c33248",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/oYelp\/oYelp.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "43480ca4-4d78-4cbf-b90d-91770fe9db4f",
             "Value": {
                 "id": "e8cd739f-82d8-4e2b-b4b4-f5c7f359767f",
@@ -362,6 +381,25 @@
             }
         },
         {
+            "Key": "5c9d3516-1ee1-4481-8213-f56be1170e5b",
+            "Value": {
+                "id": "8ac0ffea-a79c-4ca5-ace5-10205e6af918",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/oMetStatic\/oMetStatic.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5de0132b-cebe-46f8-b7da-3988a92eb3f7",
             "Value": {
                 "id": "5e2bffce-4870-406d-9612-0509cdb68dd4",
@@ -416,6 +454,25 @@
                 ],
                 "resourcePath": "objects\/oPlayer\/oPlayer.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7310d05a-264c-4edf-85be-27050e1c5e7d",
+            "Value": {
+                "id": "31fcddb5-fbc0-4b41-b683-98e913749c1b",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sYelp1\/sYelp1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -685,6 +742,25 @@
             }
         },
         {
+            "Key": "ba446773-eeac-466b-80a7-b0fb8b934f37",
+            "Value": {
+                "id": "d75b2ac5-db54-4414-92e3-94ad54fd943d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/sVictory\/sVictory.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "c16d17f4-96ab-4bab-8caa-1f8abe34e36f",
             "Value": {
                 "id": "317cedfc-4c21-4354-9196-1d5897e62ae0",
@@ -700,6 +776,25 @@
                     "default"
                 ],
                 "resourcePath": "sprites\/sMet\/sMet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c7451009-a812-4923-9d09-bb8e8fbe57a5",
+            "Value": {
+                "id": "90e415b4-0794-401e-ba33-0e9973d63f18",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sYelp\/sYelp.yy",
                 "resourceType": "GMSprite"
             }
         },
