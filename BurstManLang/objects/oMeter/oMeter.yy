@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oMeter",
     "eventList": [
-        
+        {
+            "id": "f6004108-207f-49d7-b628-f6388e373b3f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "e3291ae6-aa50-40cb-9893-b3c930f92b86"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

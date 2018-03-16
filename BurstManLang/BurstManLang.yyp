@@ -115,6 +115,25 @@
             }
         },
         {
+            "Key": "207cf8d3-0de5-42fd-b9b2-a21f9475c3f5",
+            "Value": {
+                "id": "9ab54387-4599-4362-bc0f-beaf6c74ddf7",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/sShoot\/sShoot.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "3006c9ae-48aa-4f50-8fa2-892acb63fb24",
             "Value": {
                 "id": "fceb333b-d006-4edd-8c7b-4c161046f9d2",
@@ -264,6 +283,25 @@
                 ],
                 "resourcePath": "views\/4d9ff8a1-b4e2-40bd-b4b6-df2ba06a0d96.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5de0132b-cebe-46f8-b7da-3988a92eb3f7",
+            "Value": {
+                "id": "5e2bffce-4870-406d-9612-0509cdb68dd4",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/sMusic\/sMusic.yy",
+                "resourceType": "GMSound"
             }
         },
         {

@@ -10,6 +10,9 @@ key_shoot = keyboard_check(ord("H")) || keyboard_check_pressed(vk_enter);
 
 on_ground = place_meeting(x, y+1, oWall);
 
+getting_hit = false;
+picking_up_health = false;
+
 ////Calculate movement
 var move = key_right - key_left;
 
@@ -38,6 +41,7 @@ if (place_meeting(x + hsp, y, oWall))
 }
 x = x + hsp;
 
+
 ////Vertical collision
 if (place_meeting(x, y + vsp, oWall))
 {
@@ -51,6 +55,22 @@ if (place_meeting(x, y + vsp, oWall))
 y = y + vsp;
 
 
+
+//Damage detection
+if (getting_hit) {
+	with (oMeter) {
+		if (image_index > 0) image_index = image_index - 1;	
+	}
+}
+
+//Picking up health
+if (picking_up_health) {
+	with (oMeter) {
+		if (image_index < 5) image_index = image_index + 1;	
+	}
+}
+
+
 //Shooting bullet creation
 firingdelay = max(0, firingdelay - 1);
 if (key_shoot and firingdelay == 0)
@@ -62,14 +82,13 @@ if (key_shoot and firingdelay == 0)
 		speed = 15;
 		if (other.image_xscale > 0) direction = 0;
 		else direction = 180;
+		audio_play_sound(sShoot, 1, false);
 	}
 }
 
 
 
 //Animation
-
-
 if (shooting_anim > 0) is_shooting = true;
 else is_shooting = false;
 
