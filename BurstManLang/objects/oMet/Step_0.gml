@@ -71,7 +71,7 @@ if (is_shooting and firingdelay == 0)
 	if image_xscale > 0 offset = 10;
 	else offset = -10;
 	with (instance_create_layer(x+offset,y,"shootLayer", oBullet)) {
-		speed = 5;
+		speed = 8;
 		if (other.image_xscale > 0) direction = 0;
 		else direction = 180;
 		audio_play_sound(sShoot, 1, false);
