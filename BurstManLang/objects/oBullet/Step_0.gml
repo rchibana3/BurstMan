@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-image_index = 5;
-image_speed = 0;
-death_tick = 70;
+if (place_meeting(x, y, oPlayer)) {
+	instance_destroy()
+}

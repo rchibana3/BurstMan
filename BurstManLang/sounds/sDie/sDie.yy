@@ -1,8 +1,8 @@
 {
-    "id": "5de0132b-cebe-46f8-b7da-3988a92eb3f7",
+    "id": "4b634bbd-c54f-49d4-9da8-39381ee358b1",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "sMusic",
+    "name": "sDie",
     "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,
@@ -10,5 +10,5 @@
     "preload": false,
     "sampleRate": 44100,
     "type": 0,
-    "volume": 0.7
+    "volume": 1
 }

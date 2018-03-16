@@ -12,6 +12,16 @@ on_ground = place_meeting(x, y+1, oWall);
 
 getting_hit = false;
 picking_up_health = false;
+getting_hit = false;
+
+
+if (global.hp <= 0) {
+	audio_stop_sound(sMusic);
+	audio_play_sound(sDie, 1, false);
+	global.dying = true;
+	instance_destroy();
+}
+
 
 ////Calculate movement
 var move = key_right - key_left;
@@ -30,6 +40,9 @@ if (on_ground && key_jump)
 }
 vsp = vsp + grv;
 
+
+hitdelay = max(hitdelay - 1, 0);
+
 //////Horizontal collision
 if (place_meeting(x + hsp, y, oWall))
 {
@@ -39,10 +52,14 @@ if (place_meeting(x + hsp, y, oWall))
 	}
 	hsp = 0;
 }
+//if (place_meeting(x, y + vsp, oMet)) {
+//	getting_hit = true;	
+//	hitdelay = 15;
+//}
 x = x + hsp;
 
 
-////Vertical collision
+//////Vertical collision
 if (place_meeting(x, y + vsp, oWall))
 {
 	while (!place_meeting(x, y + sign(vsp), oWall))
@@ -57,16 +74,16 @@ y = y + vsp;
 
 
 //Damage detection
-if (getting_hit) {
-	with (oMeter) {
-		if (image_index > 0) image_index = image_index - 1;	
-	}
-}
+//if (getting_hit and hitdelay <= 0) {
+//	with (oMeter) {
+//		if (oMeter.image_index > 0) oMeter.image_index = oMeter.image_index - 1;	
+//	}
+//}
 
 //Picking up health
 if (picking_up_health) {
 	with (oMeter) {
-		if (image_index < 5) image_index = image_index + 1;	
+		if (oMeter.image_index < 5) oMeter.image_index = oMeter.image_index + 1;	
 	}
 }
 
@@ -75,11 +92,11 @@ if (picking_up_health) {
 firingdelay = max(0, firingdelay - 1);
 if (key_shoot and firingdelay == 0)
 {
-	firingdelay = 4;
+	firingdelay = 6;
 	if image_xscale > 0 offset = 10;
 	else offset = -10;
 	with (instance_create_layer(x+offset,y,"shootLayer", oStar)) {
-		speed = 15;
+		speed = 8;
 		if (other.image_xscale > 0) direction = 0;
 		else direction = 180;
 		audio_play_sound(sShoot, 1, false);
